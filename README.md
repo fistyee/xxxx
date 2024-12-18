@@ -45,9 +45,12 @@ For API models, if OpenCompass updates the model interface, you can obtain the t
 MMLU focus on the breadth, reasoning without considering contamination prevention. We apply three decontamination rules to mitigate unintentional data leakage while collecting data from a broader domain. Meanwhile, our MMLU-CF benchmark maintains the test set closed-source to prevent malicious data leakage.
 
 <p float="left">
-  <img src="./Figures/Fig_4.png" alt="Fig4" width="45%" style="margin-right: 15%;" />
+  <img src="./Figures/Fig_4.png" alt="Fig4" width="55%" />
+  <span style="display:inline-block; width: 10%;"></span>
   <img src="./Figures/Fig_5.png" alt="Fig5" width="30%" />
 </p>
+
+
 
 | Model                           | MMLU 5-shot (%) | MMLU-CF 5-shot Test (%) | MMLU-CF 5-shot Validation (%) | 5-shot $\Delta$ (%) | MMLU-CF 0-shot Test (%) | MMLU-CF 0-shot Validation (%) | 0-shot $\Delta$ (%) |
 |----------------------------------|-----------------|--------------------------|------------------------------|----------------------|-------------------------|------------------------------|-----------------------|
