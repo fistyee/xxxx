@@ -17,18 +17,23 @@ This indicates that the MMLU test set suffers from data contamination and memori
 </p>
 
 
-## 2. How to Evaluate Your Models on the MMLU-CF Validation/Test set
+## 2. How to Evaluate Your Models on the MMLU-CF Validation/Test Set
 
 We perform automated testing only on Huggingface models. After following the steps outlined below and obtaining the validation set results, the test set results can then be accessed via GitHub Issues. 
-  1. **Validation Set Evaluation**: Obtaining the validation results for your model using LLM evaluation tools, [OpenCompass](https://github.com/open-compass/opencompass). We have already added **MMLU-CF** to [OpenCompass](https://github.com/open-compass/opencompass) for this purpose.
-  2. **Test Set Evaluation**: With the validation results, submit a GitHub issue on the [MMLU-CF](https://github.com/) GitHub homepage to request the test set results. Please follow the format below:
+  1. **Validation set evaluation**: Obtaining the validation results for your model using LLM evaluation tools, [OpenCompass](https://github.com/open-compass/opencompass). 
+  2. **Test set evaluation**: With the validation results, submit a GitHub issue on the [MMLU-CF](https://github.com/) GitHub homepage to request the test set results. Please follow the format below:
+
 Example,
 ```
 Title: 
-Test Request - add HF model [meta-llama/Llama-3.2-1B]  
+Test set evaluation Request - add HF model [meta-llama/Llama-3.2-1B]  
 Content: 
-Result on validation results: 68.5%
+The result on validation set: 68.5%
 ```
+<p>
+  <img src="./Figures/Fig_6.png" alt="Fig6" width="80%" style="display: block; margin: 0 auto;" />
+</p>
+
   **Notably**:
    - Ensure you use the format with square brackets `[ ]` as shown. The model name **meta-llama/Llama-3.2-1B** corresponds to the name on HuggingFace.
    - We will automatically submit your model. The time to receive the results depends on the number of models being evaluated, but it typically takes **1-2 weeks**.
@@ -37,7 +42,7 @@ For API models, if OpenCompass updates the model interface, you can obtain the t
 
 
 ## 3. What is the Difference between MMLU-CF and MMLU
-MMLU focus on the breadth, reasoning without considering contamination prevention. We apply three decontamination rules to mitigate unintentional data leakage while collecting data from a broader domain. Meanwhile, our MMLU-CF benchmark maintains the test set closed-source to prevent malicious data leakage.
+MMLU focuses on the breadth and reasoning without considering contamination prevention. We apply three decontamination rules to mitigate unintentional data leakage while collecting data from a broader domain. Meanwhile, our MMLU-CF benchmark maintains the test set closed-source to prevent malicious data leakage.
 
 <p float="left">
   <img src="./Figures/Fig_4.png" alt="Fig4" width="55%" />
