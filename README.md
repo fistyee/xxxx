@@ -19,9 +19,11 @@ This indicates that the MMLU test set suffers from data contamination and memori
 
 ## 2. How to Evaluate Your Models on the MMLU-CF Validation/Test Set
 
-We perform automated testing only on Huggingface models. After following the steps outlined below and obtaining the validation set results, the test set results can then be accessed via GitHub Issues. 
-  1. **Validation set evaluation**: Obtaining the validation results for your model using LLM evaluation tools, [OpenCompass](https://github.com/open-compass/opencompass). 
-  2. **Test set evaluation**: With the validation results, submit a GitHub issue on the [MMLU-CF](https://github.com/) GitHub homepage to request the test set results. Please follow the format below:
+  #### (1) We perform automated testing only on Huggingface models. After following the steps outlined below and obtaining the validation set results from [OpenCompass](https://github.com/open-compass/opencompass), the test set results can then be accessed via GitHub Issues. 
+  
+  **Step 1**. **Validation set evaluation**: Obtaining the validation results for your model using LLM evaluation tools, [OpenCompass](https://github.com/open-compass/opencompass). 
+  
+  **Step 2**. **Test set evaluation**: With the validation results, submit a GitHub issue on the [MMLU-CF](https://github.com/) GitHub homepage to request the test set results. Please follow the format below:
 
 Example 1,
 ```
@@ -39,7 +41,7 @@ Example 2,
    - Ensure you use the format with square brackets `[ ]` as shown. The model name **microsoft/phi-4** corresponds to the name on HuggingFace.
    - We will automatically submit your model. The time to receive the results depends on the number of models being evaluated, but it typically takes **1-2 weeks**.
 
-For API models, if OpenCompass updates the model interface, you can obtain the test set results by sending a temporary key to [Email](yangyu.huang@microsoft.com) after receiving the validation set results.
+  #### (2) For API models, if OpenCompass updates the model interface, you can obtain the test set results by sending a temporary key to [Email](yangyu.huang@microsoft.com) after receiving the validation set results.
 
 
 ## 3. What is the Difference between MMLU-CF and MMLU
