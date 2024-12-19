@@ -23,19 +23,20 @@ We perform automated testing only on Huggingface models. After following the ste
   1. **Validation set evaluation**: Obtaining the validation results for your model using LLM evaluation tools, [OpenCompass](https://github.com/open-compass/opencompass). 
   2. **Test set evaluation**: With the validation results, submit a GitHub issue on the [MMLU-CF](https://github.com/) GitHub homepage to request the test set results. Please follow the format below:
 
-Example,
+Example 1,
 ```
 Title: 
-Test set evaluation Request - add HF model [meta-llama/Llama-3.2-1B]  
+Test set evaluation Request - add HF model [microsoft/phi-4]  
 Content: 
 The result on validation set: 68.5%
 ```
+Example 2,
 <p>
   <img src="./Figures/Fig_6.png" alt="Fig6" width="80%" style="display: block; margin: 0 auto;" />
 </p>
 
   **Notably**:
-   - Ensure you use the format with square brackets `[ ]` as shown. The model name **meta-llama/Llama-3.2-1B** corresponds to the name on HuggingFace.
+   - Ensure you use the format with square brackets `[ ]` as shown. The model name **microsoft/phi-4** corresponds to the name on HuggingFace.
    - We will automatically submit your model. The time to receive the results depends on the number of models being evaluated, but it typically takes **1-2 weeks**.
 
 For API models, if OpenCompass updates the model interface, you can obtain the test set results by sending a temporary key to [Email](yangyu.huang@microsoft.com) after receiving the validation set results.
